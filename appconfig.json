@@ -1,0 +1,24 @@
+{
+	"headers": {
+		"Access-Control-Allow-Methods": "GET, HEAD, OPTIONS, POST",
+		"Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
+	},
+	"hosting": "googlecloud",
+	"env": {
+		"active": "build",
+		"default": {
+			"functionName": "zipcodes",
+			"trigger": "--trigger-http",
+			"entryPoint": "zipcodes",
+			"project": "carbon-web-124017",
+			"bucket": "epf-zipcodes-resource"
+		},
+		"build": {
+			"functionName": "zipcodes",
+			"trigger": "--trigger-http",
+			"entryPoint": "zipcodes",
+			"project": "carbon-web-124017",
+			"bucket": "epf-zipcodes-resource"
+		}
+	}
+}
